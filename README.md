@@ -42,30 +42,30 @@ Tasks:
 
 Classification
 ```python
-   # FIXME
+   # FIXME not working currently
    python train.py --config_path ./configs/pointnet/pointnet_modelnet40.yaml --backbone PointNet
 ```
 ```python
-   # FIXME
+   # FIXME not working currently
    python train.py --config_path ./configs/pointconv/pointconv_modelnet40.yaml --backbone PointConv
 ```
 ```python
-   # FIXME
+   # FIXME not working currently
    python train.py --config_path ./configs/edgeconv/edgeconv_modelnet40.yaml --backbone EdgeConv
 ```
 
 Inductive ZSL
 ```python
-   python train_inductive.py --config_path ./configs/pointnet/pointnet_modelnet40.yaml --dataset_eval ModelNet10 --backbone PointNet --scene_aug --verbose --pbar
+   python train_inductive.py --config_path ./configs/pointnet/pointnet_modelnet40.yaml --dataset_eval ModelNet10 --backbone PointNet --alpha_sceneaug 0.9 --verbose --pbar
 ```
 ```python
-   python train_inductive.py --config_path ./configs/pointnet/pointnet_scanobjectnn.yaml --dataset_eval ScanObjectNN --backbone PointNet --scene_aug --verbose --pbar
+   python train_inductive.py --config_path ./configs/pointnet/pointnet_scanobjectnn.yaml --dataset_eval ScanObjectNN --backbone PointNet --alpha_sceneaug 0.9 --verbose --pbar
 ```
 
 Tune Inductive ZSL Models
 ```python
-   python tunning_inductive.py --config_path ./configs/pointnet/pointnet_modelnet40.yaml --dataset_eval ModelNet10 --backbone PointNet --scene_aug --verbose --pbar
+   python tunning_inductive.py --config_path ./configs/pointnet/pointnet_modelnet40.yaml --dataset_eval ModelNet10 --backbone PointNet --alpha_sceneaug 0.9 --verbose --pbar
 ```
 ```python
-   python tunning_inductive.py --config_path ./configs/pointnet/pointnet_scanobjectnn.yaml --dataset_eval ScanObjectNN --backbone PointNet --scene_aug --verbose --pbar
+   python tunning_inductive.py --config_path ./configs/pointnet/pointnet_scanobjectnn.yaml --dataset_eval ScanObjectNN --backbone PointNet --alpha_sceneaug 0.9 --verbose --pbar
 ```

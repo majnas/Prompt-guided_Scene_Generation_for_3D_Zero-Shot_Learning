@@ -8,3 +8,7 @@ numpy
 scipy
 pyyaml
 transformers
+tensorboard
+matplotlib
+scikit-learn
+h5py
