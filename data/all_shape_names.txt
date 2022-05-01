@@ -1,0 +1,48 @@
+airplane
+bathtub
+bed
+bench
+bookshelf
+bottle
+bowl
+car
+chair
+cone
+cup
+curtain
+desk
+door
+dresser
+flower_pot
+flower pot
+glass_box
+glass box
+guitar
+keyboard
+lamp
+laptop
+mantel
+monitor
+night_stand
+night stand
+person
+piano
+plant
+radio
+range_hood
+range hood
+sink
+sofa
+stairs
+stool
+table
+tent
+toilet
+tv_stand
+tv stand
+vase
+wardrobe
+xbox
+cabinet
+display
+shelf

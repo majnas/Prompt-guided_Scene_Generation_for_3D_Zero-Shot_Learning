@@ -1,0 +1,11 @@
+seen_class : 30
+unseen_class : 14
+total_class : 44
+dataset_path : 'data/McGill/'
+saved_model : 'saved_model/McGill/'
+
+epoch : 5 
+batch_size : 64
+lr : 1e-4 
+wd : 1e-6
+

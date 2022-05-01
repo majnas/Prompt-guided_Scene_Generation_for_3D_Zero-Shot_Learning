@@ -1,0 +1,10 @@
+rich
+glob2
+tqdm
+torch
+torchaudio
+torchvision
+numpy
+scipy
+pyyaml
+transformers

@@ -1,0 +1,11 @@
+cabinet
+chair
+desk
+display
+door
+shelf
+table
+bed
+sink
+sofa
+toilet

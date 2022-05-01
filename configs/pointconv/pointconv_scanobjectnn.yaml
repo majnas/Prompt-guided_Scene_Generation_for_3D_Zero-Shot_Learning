@@ -1,0 +1,11 @@
+seen_class : 26
+unseen_class : 11
+total_class : 37
+dataset_path : 'data/ScanObjectNN/'
+saved_model : 'saved_model/ScanObjectNN/'
+
+epoch : 5
+batch_size : 64
+lr : 1e-4 
+wd : 1e-6
+

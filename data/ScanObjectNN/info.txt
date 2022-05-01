@@ -1,0 +1,18 @@
+ ------ScanObjectNN-------------- ModelNet40   
+ [0] bag
+ [1] bin 
+ [2] box
+ [3] cabinet ------ unseen ---- [14]dresser [38]wardrobe
+ [4] chair -------- unseen ---- [8]chair [3]bench [32]stool
+ [5] desk --------- unseen ---- [12]desk
+ [6] display ------ unseen ---- [22]monitor
+ [7] door --------- unseen ---- [13]door
+ [8] shelf -------- unseen ---- [4]bookshelf
+ [9] table -------- unseen ---- [33]table
+[10] bed ---------- unseen ---- [2]bed
+[11] pillow
+[12] sink --------- unseen ---- [29]sink
+[13] sofa --------- unseen ---- [30]sofa
+[14] toilet ------- unseen ---- [35]toilet
+
+

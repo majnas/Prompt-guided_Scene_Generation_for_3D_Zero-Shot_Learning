@@ -1,0 +1,37 @@
+# dataset info
+seen_class : 30
+unseen_class : 10
+total_class : 40
+num_points: 2048
+use_normals: false
+train_dataset_dir : 'data/ModelNet/'
+eval_dataset_dir : 'data/ModelNet/'
+zs_classes_text_path: "./data/ModelNet/unseen_text_classes_modelnet40.txt"
+gzs_classes_text_path: "./data/ModelNet/seen_unseen_text_classes_modelnet40.txt"
+zs_classes_path: "./data/ModelNet/unseen_classes_modelnet40.txt"
+gzs_classes_path: "./data/ModelNet/seen_unseen_classes_modelnet40.txt"
+bachbone_features_size: 1024
+embbeding_size: 128
+
+bert_text_embeddings_path: "./data/bert_text_embedding.mat"
+bert_text_embedding_size: 768
+glove_text_embeddings_path: "./data/glove_text_embedding.mat"
+glove_text_embedding_size: 300
+w2v_text_embeddings_path: "./data/w2v_text_embedding.mat"
+w2v_text_embedding_size: 300
+
+
+# training paths and parameters
+checkpoints_dir : 'checkpoints/pointnet_modelnet40_modelnet10'
+logs_dir: 'runs/pointnet_modelnet40_modelnet10'
+epoch : 100
+batch_size : 48
+lr : 1e-3
+wd : 1e-6
+
+
+
+# network parameters
+k: 40
+feature_transform: true
+alpha_sceneaug: 0.1
