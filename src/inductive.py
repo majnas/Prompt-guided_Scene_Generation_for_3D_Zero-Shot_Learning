@@ -210,8 +210,8 @@ class InductiveModel():
 
 
             # save confusion matrix
-            self.save_confusion_matrix(epoch=epoch)
-            print("zs_score_best", self.zs_score_best)
+            # self.save_confusion_matrix(epoch=epoch)
+            # print("zs_score_best", self.zs_score_best)
 
             # save model
             self.save(epoch=epoch)

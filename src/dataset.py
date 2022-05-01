@@ -1,4 +1,5 @@
 import torch
+import numpy as np
 from torch.autograd.grad_mode import F
 import torchvision.transforms as T
 from torchvision.transforms import autoaugment
@@ -281,9 +282,9 @@ class SemanticDataset():
     #------------------------------------------------------------------------------#
     @property
     def zs_text_embeddings(self):
-        return torch.FloatTensor([self.text_embeddings[txt] for txt in self.zs_test_texts])
+        return torch.FloatTensor(np.array([self.text_embeddings[txt] for txt in self.zs_test_texts]))
 
     @property
     def gzs_text_embeddings(self):
-        return torch.FloatTensor([self.text_embeddings[txt] for txt in self.gzs_test_texts])
+        return torch.FloatTensor(np.array([self.text_embeddings[txt] for txt in self.gzs_test_texts]))
 
