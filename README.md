@@ -1,4 +1,4 @@
-# Dynamic Scene Supervision for Zero-Shot Learning on 3D Point Cloud
+# Dynamic Scene Supervision for Zero-Shot Learning on 3D Point Cloud (Ali)
 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github.com/majnas/DSS_ZSL_3D_Point_Cloud/blob/master/tutorial.ipynb)
