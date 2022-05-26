@@ -1,3 +1,23 @@
+import hashlib
+import os
+import urllib
+import warnings
+from typing import Union, List
+
+import torch
+from PIL import Image
+from torchvision.transforms import Compose, Resize, CenterCrop, ToTensor, Normalize
+from tqdm import tqdm
+
+
+from .simple_tokenizer import SimpleTokenizer as _Tokenizer
+
+
+
+_tokenizer = _Tokenizer()
+
+
+
 def tokenize(texts: Union[str, List[str]], context_length: int = 77, truncate: bool = False) -> torch.LongTensor:
     """
     Returns the tokenized representation of given input string(s)
