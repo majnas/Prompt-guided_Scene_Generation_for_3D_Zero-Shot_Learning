@@ -110,7 +110,11 @@ class TextEncoder(nn.Module):
         x = x[torch.arange(x.shape[0]), tokenized_prompts.argmax(dim=-1)] @ self.text_projection
 
         return x
-   
+
+    
+    
+    
+txt_enc=TextEncoder(vocab_size=49408,context_length=77,transformer_width=512,embed_dim=512,transformer_layers=6,transformer_heads=16)    
 
 class PromptLearner(nn.Module):
     def __init__(self, classnames):
@@ -120,8 +124,8 @@ class PromptLearner(nn.Module):
         ctx_init = ""  # initialization words
         
         ctx_dim = txt_enc.ln_final.weight.shape[0]
-        # vis_dim = clip_model.visual.output_dim
-        vis_dim = 1024
+        
+        vis_dim = 1024 #outputdim from pointnet
         if ctx_init:
             # use given words to initialize context vectors
             ctx_init = ctx_init.replace("_", " ")
@@ -148,10 +152,7 @@ class PromptLearner(nn.Module):
             ("relu", nn.ReLU(inplace=True)),
             ("linear2", nn.Linear(vis_dim // 16, ctx_dim))
         ]))
-       
-        # if cfg.TRAINER.COCOOP.PREC == "fp16":
-        # if PREC == "fp16":  
-        #     self.meta_net.half()
+
 
         classnames = [name.replace("_", " ") for name in classnames]
         name_lens = [len(_tokenizer.encode(name)) for name in classnames]
@@ -263,5 +264,5 @@ class CustomCLIP(nn.Module):
 
 
 classnames=['cat','book'] #classes
-txt_enc=TextEncoder(vocab_size=49408,context_length=77,transformer_width=512,embed_dim=512,transformer_layers=6,transformer_heads=16)
+
 Custom_model = CustomCLIP( classnames=classnames,vocab_size=49408,context_length=77,transformer_width=512,embed_dim=512,transformer_layers=6,transformer_heads=16)
