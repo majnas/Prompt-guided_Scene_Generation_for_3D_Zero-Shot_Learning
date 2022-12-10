@@ -1,4 +1,4 @@
-# Dynamic Scene Supervision for Zero-Shot Learning on 3D Point Cloud (Ali)
+# Prompt-guided Scene Generation for 3D Zero-Shot Learning [Paper](https://arxiv.org/abs/2209.14690)
 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github.com/majnas/DSS_ZSL_3D_Point_Cloud/blob/master/tutorial.ipynb)
